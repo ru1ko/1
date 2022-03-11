@@ -1,0 +1,48 @@
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 30rpx;
+ }
+ .box{
+  width: 90%;
+  display: flex;
+  background: grey
+ }
+   
+ button{
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20rpx;
+  background:#ffffff;
+   
+ }
+ .infoMsg{
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+  border: 1rpx solid #e2e2e2;
+  font-size: 28rpx;
+ }
+ .infoMsg view{
+  display: flex;
+  border-top: 1rpx solid #e2e2e2;
+ }
+ .infoMsg view>label{
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ }
+ .infoMsg view>label:not(:first-child){
+  border-left: 1rpx solid #e2e2e2;
+ }
+ .infoMsg view>label text{
+  margin-right: 10rpx;
+  border: 1rpx solid #e2e2e2;
+ }

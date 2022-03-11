@@ -1,0 +1,12 @@
+input{
+  height: 60rpx;
+  width: 400rpx;
+  border: 5rpx solid black;
+  border-radius: 40rpx;
+  padding: 5rpx 40rpx;
+  margin: 40rpx;
+}
+button{
+  opacity: 0.9;
+  transform: scale(0.9,0.9);
+}

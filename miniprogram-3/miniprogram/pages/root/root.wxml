@@ -1,0 +1,38 @@
+<view class="container">
+ <view class='box' style='background:#FFFFFF'>
+  <label>书名:</label>
+  <input data-value='{{inpVal}}' bindinput='getName' value='{{inpVal}}'></input>
+ </view>
+ <view class='box' style='background:#FFFFFF;margin-top:1rpx;'>
+  <label>分类:</label>
+  <input data-value='{{inpVal}}' bindinput='getfenlei' value='{{inp2Val}}'></input>
+ </view>
+  <view class='box' style='background:#FFFFFF;margin-top:10rpx;'>
+ <label>位置:</label>
+  <input data-value='{{inpVal}}' bindinput='getwhere' value='{{inp3Val}}'></input>
+ </view>
+ <view class='box' style='background:#FFFFFF;margin-top:10rpx;'>
+ <label>简介:</label>
+  <input data-value='{{inpVal}}' bindinput='getjianjie' value='{{inp4Val}}'></input>
+ </view>
+ <button wx:if='{{show}}' bindtap='setUserMsg'>提交</button>
+ <button wx:if="{{!show}}" data-id="{{id}}" bindtap='updetMsg'>确认修改</button>
+</view>
+  
+<view class='infoMsg'>
+ <view>
+  <label>书名</label>
+  <label>分类</label>
+  <label>位置</label>
+  <label>操作</label>
+ </view>
+ <view wx:for="{{list}}">
+  <label>{{item.bookname}}</label>
+  <label>{{item.fenlei}}</label>
+  <label>{{item.weizhi}}</label>
+  <label>
+   <text data-id='{{item._id}}' bindtap='changeMsg'>修改</text>
+  </label>
+ </view>
+  
+</view>

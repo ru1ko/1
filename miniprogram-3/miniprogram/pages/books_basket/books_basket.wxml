@@ -1,0 +1,24 @@
+
+<block wx:for="{{books_basket}}" wx:key="_id">
+  <view class="product_list">
+    <view class="product_list_1">
+      <checkbox-group bindchange="xuanze" data-id="{{item._id}}">
+      <checkbox value="{{item._id}}" checked="{{item.product_checked}}"></checkbox>
+      </checkbox-group>
+      <view class="product_list_3">
+        <image src="{{item.books_src}}" style="width:100rpx;height:100rpx"></image>
+        <view class="product_list_2">
+          <view style="font-size:20px">{{item.books_name}}</view>
+          <view style="color:red">位置：{{item.books_weizhi}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+<view class="anniu">
+  <button bindtap="detele" size="mini" type="warn" plain="ture">删除</button>
+  <view class="pay">
+    <button bindtap="pay" type="warn" plain="ture">借阅书籍</button>
+  </view>
+</view>

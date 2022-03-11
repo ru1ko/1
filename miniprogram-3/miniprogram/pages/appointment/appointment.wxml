@@ -1,0 +1,9 @@
+<view class="zixishi">
+  <view class="keshi" bindtap="goTozixishi">前往自习室一号</view>
+</view>
+<view class="zixishi">
+  <view class="keshi" bindtap="goTozixishi">前往自习室二号</view>
+</view>
+<view class="zixishi">
+  <view class="keshi" bindtap="goTozixishi">前往自习室三号</view>
+</view>

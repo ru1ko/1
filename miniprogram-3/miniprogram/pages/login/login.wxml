@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<text class="header">学生账号密码登录</text>
+<form bindsubmit="onLogin">
+  <input name="username" placeholder="学号"></input>
+  <input name="password" placeholder="密码" password></input>
+  <button form-type="submit" hover-class="hover">登录</button>
+</form>
+
+<button hover-class="hover" bindtap="gotoroot">管理员界面</button>
+
+</view>

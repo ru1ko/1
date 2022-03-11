@@ -1,0 +1,42 @@
+<!--pages/books/books.wxml-->
+<view class="searchbox"> <!--搜索框-->
+  <input placeholder="请输入想要搜索的书籍" bindconfirm="search" confirm-type="done"></input>
+  <image src="cloud://ru1ko-1ggnbvi79fc6362c.7275-ru1ko-1ggnbvi79fc6362c-1304656531/icon/search.png" style="width:50rpx;height:50rpx"></image>
+</view>
+
+<view class="list" wx:for="{{search}}" wx:key="_id">
+<navigator class="list_1" url="../product/product?id={{item._id}}">
+  <image src="{{item.src}}" style="width:100rpx;height:100rpx;margin-left:10rpx;"></image>
+  <view>书名：{{item.bookname}}</view>
+  <view style="margin-right:50rpx;">位置：{{item.weizhi}}</view>
+</navigator>
+<view class="line"></view>
+</view>
+
+<view class="fenlei">
+<view class="fenlei_left">
+  <block wx:for="{{fenlei}}" wx:key="_id">
+    <view class="fenlei_left_1" bindtap="get_fenlei" data-name="{{item.name}}">
+      <image src="{{item.src}}" style="width:50rpx;height:50rpx"></image>
+      <view>{{item.name}}</view>
+    </view>
+  </block>
+</view>
+<view class="line_1"></view>
+
+<swiper-view class="fenlei_right" style="width:60%; height:100vh;">
+  <block wx:for="{{books}}" wx:key="_id">
+    <navigator class="fenlei_right_1" url="../product/product?id={{item._id}}">
+    <view class="fenlei_right_2">
+      <image src="{{item.src}}" style="width:120rpx;height:120rpx"></image>
+      <view style="margin-left: 10rpx;">
+        <view>{{item.bookname}}</view>
+        <view>位置：{{item.weizhi}}</view>
+      </view>
+    </view>
+    </navigator>
+  </block>
+</swiper-view>
+
+
+</view>

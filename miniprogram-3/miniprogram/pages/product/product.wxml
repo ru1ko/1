@@ -1,0 +1,18 @@
+<!--pages/product/product.wxml-->
+<view class="tupian">
+    <image src="{{books_src}}" style="width:750rpx;height:750rpx"></image>
+</view>
+<view class="product">
+  <view class="product_1">
+    <view>{{books_name}}:</view>
+    <view style="color:red">所在位置：{{books_weizhi}}</view>
+  </view>
+  <view class="line"></view>
+  <view style="color:rgb(141.141.141)">{{books_jianjie}}</view>
+</view>
+<view class="jieshu">
+  <view class="jieshu_1" bindtap="into_books_basket">
+    <image src="cloud://ru1ko-1ggnbvi79fc6362c.7275-ru1ko-1ggnbvi79fc6362c-1304656531/icon/books2.png" style="width:80rpx;height:80rpx"></image>
+  </view>
+  <view class="jieshu_2" bindtap="buy">前往借书篮</view>
+</view>

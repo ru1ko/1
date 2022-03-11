@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/books/books",
+    "pages/root/root",
+    "pages/books_basket/books_basket",
+    "pages/product/product",
+    "pages/home/home",
+    "pages/appointment/appointment",
+    "pages/me/me",
+    "pages/jieshu/jieshu",
+    "pages/zixishi/zixishi",
+    "pages/root_login/root_login"
+    
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "珠海市实验中学图书馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#d81e06",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home2.png"
+    },{
+      "pagePath": "pages/books/books",
+      "text": "图书",
+      "iconPath": "image/books.png",
+      "selectedIconPath": "image/books2.png"
+    }
+    ,{
+      "pagePath": "pages/appointment/appointment",
+      "text": "预约",
+      "iconPath": "image/appointment.png",
+      "selectedIconPath": "image/appointment2.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "image/me.png",
+      "selectedIconPath": "image/me2.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

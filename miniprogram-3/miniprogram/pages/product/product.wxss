@@ -1,0 +1,57 @@
+/* pages/product/product.wxss */
+.tupian{
+  align-self: center;
+  width: 100%;
+  height: 750rpx;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  align-self: center;
+  margin-bottom: 20rpx;
+}
+.product_1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size:23px;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.line{
+  width: 100%;
+  height: 15rpx;
+  background-color: rgb(209, 209 ,209);
+  margin-bottom: 10rpx;
+}
+.jieshu{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+}
+.jieshu_1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 20%;
+}
+.jieshu_2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  background-color:red;
+}

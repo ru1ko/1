@@ -1,0 +1,6 @@
+<view class="zuowei">
+<view wx:for="{{zuowei}}" wx:key="_id" class="zuowei_1" bindtap="yuding">
+  <image src="{{item.src}}" style="width:100rpx;height:100rpx"></image>
+  <text>{{item.zuowei_1}}</text>
+</view>
+</view>

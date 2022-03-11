@@ -1,0 +1,13 @@
+<swiper-view class="fenlei_right" style="width:60%; height:100vh;">
+  <block wx:for="{{books_basket}}" wx:key="_id">
+    <navigator class="fenlei_right_1" url="../product/product?id={{item._id}}">
+    <view class="fenlei_right_2">
+      <image src="{{item.books_src}}" style="width:120rpx;height:120rpx"></image>
+      <view style="margin-left: 10rpx;">
+        <view>{{item.books_name}}</view>
+        <view>位置：{{item.books_weizhi}}</view>
+      </view>
+    </view>
+    </navigator>
+  </block>
+</swiper-view>
